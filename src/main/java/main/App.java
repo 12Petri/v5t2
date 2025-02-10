@@ -26,13 +26,13 @@ public class App
                                 
         switch (i) {
             case 1:
-                System.out.print("Anna koneen tyyppi: ");
+                System.out.println("Anna koneen tyyppi: ");
                 String type = sc.nextLine();
-                System.out.print("Anna koneen malli: ");
+                System.out.println("Anna koneen malli: ");
                 String model = sc.nextLine();
-                System.out.print("Anna työntekijän nimi: ");
+                System.out.println("Anna työntekijän nimi: ");
                 String name = sc.nextLine();
-                System.out.print("Anna työntekijän ammattinimike: ");
+                System.out.println("Anna työntekijän ammattinimike: ");
                 String role = sc.nextLine();
                 factory.addMachine(type, model, name, role);
                 break;
