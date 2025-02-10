@@ -37,7 +37,7 @@ public class App
                 factory.addMachine(type, model, name, role);
                 break;
             case 2:
-                factory.showMachines();
+                factory.listMachines();
                 break;
             case 0:
                 System.out.println("Kiitos ohjelman käytöstä.");

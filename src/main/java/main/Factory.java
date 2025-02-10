@@ -18,14 +18,14 @@ public class Factory {
         System.out.println("Kone lisätty!");
     }
 
-    public void showMachines() {
+    public void listMachines() {
         if (machines == null) {
             System.out.println("Ei koneita lisättynä.");
         }
         else {
             System.out.println("Tehtaasta " + name + " löytyy seuraavat koneet:");
             for (Machine machine : machines) {
-                machine.printMachineDetails();
+                machine.getMachineDetails();
                 System.out.println();
             }
         }
