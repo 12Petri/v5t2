@@ -40,7 +40,7 @@ public class App
                 factory.addMachine(machine);
                 break;
             case 2:
-                System.out.println("Tehtaasta " + factory.getName() + " löytyy seuravat koneet:");
+                System.out.println("Tehtaasta " + factory.getName() + " löytyy seuraavat koneet:");
                 for (Machine machineSingle : factory.getMachines()) {
                     System.out.println(machineSingle.getMachineDetails());
                     System.out.println();
