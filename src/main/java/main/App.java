@@ -34,10 +34,17 @@ public class App
                 String name = sc.nextLine();
                 System.out.println("Anna työntekijän ammattinimike: ");
                 String role = sc.nextLine();
-                factory.addMachine(type, model, name, role);
+
+                Worker worker = new Worker(name, role);
+                Machine machine = new Machine(type, model, worker);
+                factory.addMachine(machine);
                 break;
             case 2:
-                factory.listMachines();
+                System.out.println("Tehtaasta " + factory.getName() + " löytyy seuravat koneet:");
+                for (Machine machineSingle : factory.getMachines()) {
+                    System.out.println(machineSingle.getMachineDetails());
+                    System.out.println();
+                }
                 break;
             case 0:
                 System.out.println("Kiitos ohjelman käytöstä.");

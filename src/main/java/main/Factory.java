@@ -11,23 +11,16 @@ public class Factory {
         this.machines = new ArrayList<>();
     }
     
-    public void addMachine(String type, String model, String name, String Role) {
-        Worker worker = new Worker(name, Role);
-        Machine machine = new Machine(type, model, worker);
+    public void addMachine(Machine machine) {
         machines.add(machine);
         System.out.println("Kone lisätty!");
     }
 
-    public void listMachines() {
-        if (machines == null) {
-            System.out.println("Ei koneita lisättynä.");
-        }
-        else {
-            System.out.println("Tehtaasta " + name + " löytyy seuraavat koneet:");
-            for (Machine machine : machines) {
-                machine.getMachineDetails();
-                System.out.println();
-            }
-        }
+    public ArrayList<Machine> getMachines() {
+        return machines;
+    }
+
+    public String getName() {
+        return name;
     }
 }

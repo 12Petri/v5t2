@@ -11,8 +11,8 @@ public class Machine {
         this.operator = operator;
     }
     
-    public void getMachineDetails() {
-        System.out.println("Koneen tiedot: " + type + ", " + model);
-        System.out.println("Työntekijän tiedot: " + operator.getWorkerName() + ", " + operator.getWorkerRole());
+    public String getMachineDetails() {
+        return "Koneen tiedot: " + type + ", " + model + "\n" + 
+                "Työntekijän tiedot: " + operator.getWorkerName() + ", " + operator.getWorkerRole();
     }
 }
